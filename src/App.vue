@@ -1,15 +1,21 @@
 <template>
-  <LearningResources />
+  <div>
+    <TheHeader title="RememberMe" />
+    <StoredResources :resources="StoredResources" />
+  </div>
 </template>
+
 <script>
-import LearningResources from '@/components/learning-resource/LearningResources.vue';
+import StoredResources from './components/learning-resource/StoredResources.vue';
+import TheHeader from './components/layouts/TheHeader.vue';
 export default {
   components: {
-    LearningResources,
+    StoredResources,
+    TheHeader,
   },
   data() {
     return {
-      storedMessages: [
+      StoredResources: [
         {
           id: 'Official-guide',
           title: 'Official Guide',
@@ -27,3 +33,19 @@ export default {
   },
 };
 </script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+</style>
