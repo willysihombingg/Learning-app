@@ -1,7 +1,8 @@
 {
-  "name": "vue-first-app",
+  "name": "learning-resource_app",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "yarn@3.3.1",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -9,7 +10,8 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^3.0.0"
+    "vue": "^3.0.0",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
